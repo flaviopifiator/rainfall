@@ -1,0 +1,23 @@
+### Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Installer logs
+pip-log.txt
+
+### VisualStudioCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+### Project
+rainfall/media/
+staticfiles/
+
+.ipython/
+.env
+.envs/*
+!.envs/.local/

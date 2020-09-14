@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=rainfall
+POSTGRES_USER=zvAzSsgIMsfyhFLyaNBcKfsZsAtCBmrZ
+POSTGRES_PASSWORD=bqAHAURLKARHPrCVIzjP0fgGwgv0gTIcd9hzhIr50avIGY4k0BnuObNxBTPcGdwi
