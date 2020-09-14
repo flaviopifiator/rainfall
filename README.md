@@ -7,7 +7,7 @@ Requirements
 - docker
 - docker-compose
 
-Run proyect
+Run project
 ------------
 - docker-compose up -d
 - docker-compose django ./manage.py loaddata ...
