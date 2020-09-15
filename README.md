@@ -26,8 +26,8 @@ Example to use query params
 **List of rains**
 [http://localhost:8000/api/v1/rain/](http://localhost:8000/api/v1/rain/)
 Example to use query params
-- [GET] [http://localhost:8000/api/v1/rain/?floor__name=name1](http://localhost:8000/api/v1/rain/?floor__name=name1) Filter precipitation by soil name
-- [GET] [http://localhost:8000/api/v1/rain/?floor__id=1](http://localhost:8000/api/v1/rain/?floor__id=1) Filter precipitation by soil id
+- [GET] [http://localhost:8000/api/v1/rain/?floor__name=campo1](http://localhost:8000/api/v1/rain/?floor__name=campo1) Filter precipitation by soil name
+- [GET] [http://localhost:8000/api/v1/rain/?floor__id=2](http://localhost:8000/api/v1/rain/?floor__id=2) Filter precipitation by soil id
 
 
 **Create rain**

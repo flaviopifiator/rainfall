@@ -13,3 +13,4 @@ class FloorAdmin(LeafletGeoAdmin):
 @admin.register(models.Rain, site=admin.site)
 class RainAdmin(admin.ModelAdmin):
     list_display = ['floor', 'precipitation', 'date']
+    list_filter = ['floor__name']
