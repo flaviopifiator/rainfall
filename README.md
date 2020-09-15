@@ -10,7 +10,12 @@ Requirements
 Run project
 ------------
 - docker-compose up -d
-- docker-compose django ./manage.py loaddata ...
+- docker exec django ./manage.py loaddata initial_data.json
+
+Auth Admin
+----------
+- username: admin
+- password: admin
 
 Available endpoints
 -------------------
@@ -19,8 +24,8 @@ Available endpoints
 [http://localhost:8000/api/v1/floor/](http://localhost:8000/api/v1/floor/)
 
 Example to use query params
-- [GET] [http://localhost:8000/api/v1/floor/?last_days=1](http://localhost:8000/api/v1/floor/?last_days=1) Average rainfall in the last days, between 1 and 7 days.
-- [GET] [http://localhost:8000/api/v1/floor/?precipitations__gt=100.5](http://localhost:8000/api/v1/floor/?precipitations__gt=100.5) Filters those soils where their historical precipitation is higher than the declared value.
+- [GET] [http://localhost:8000/api/v1/floor/?last_days=2](http://localhost:8000/api/v1/floor/?last_days=2) Average rainfall in the last days, between 1 and 7 days.
+- [GET] [http://localhost:8000/api/v1/floor/?precipitations__gt=555](http://localhost:8000/api/v1/floor/?precipitations__gt=555) Filters those soils where their historical precipitation is higher than the declared value.
 
 
 **List of rains**
@@ -31,4 +36,4 @@ Example to use query params
 
 
 **Create rain**
-[POST] [http://localhost:8000/api/v1/rain/](http://localhost:8000/api/v1/rain/)
+- [POST] [http://localhost:8000/api/v1/rain/](http://localhost:8000/api/v1/rain/)
