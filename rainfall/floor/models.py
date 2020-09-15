@@ -16,9 +16,11 @@ class Floor(models.Model):
     def __str__(self) -> str:
         return f'{self.name}'
 
-    def avarage_precipitations(self, days) -> Decimal:
-        return self.rains.filter_last_days(days).aggregate(models.Avg('precipitation')) \
-            .get('precipitation__avg')
+    def average_precipitations(self, days) -> Decimal:
+        precipitation_avg = self.rains.filter_last_days(days) \
+            .aggregate(models.Avg('precipitation')) \
+            .get('precipitation__avg') or Decimal(0)
+        return round(precipitation_avg, 2)
 
     @property
     def longitude(self):
@@ -35,7 +37,7 @@ class Floor(models.Model):
         except IndexError:
             latitude = None
         return latitude
-        
+
 
 class Rain(models.Model):
     date = models.DateTimeField()
@@ -45,4 +47,3 @@ class Rain(models.Model):
 
     def __str__(self) -> str:
         return f'{self.floor.name}, {self.date}'
-    

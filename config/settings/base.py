@@ -1,8 +1,8 @@
 """
 Base settings to build other settings files upon.
 """
-from pathlib import Path
 import environ
+from pathlib import Path
 
 
 ROOT_DIR = Path(__file__).resolve(strict=True).parent.parent.parent
@@ -62,7 +62,6 @@ THIRD_PARTY_APPS = [
     "djgeojson",
     "leaflet",
     "django_filters",
-    "drf_yasg",
 ]
 
 LOCAL_APPS = [
@@ -189,6 +188,7 @@ REST_FRAMEWORK = {
     'DEFAULT_FILTER_BACKENDS': (
         'django_filters.rest_framework.DjangoFilterBackend',
     ),
+    'TEST_REQUEST_DEFAULT_FORMAT': 'json'
 }
 
 

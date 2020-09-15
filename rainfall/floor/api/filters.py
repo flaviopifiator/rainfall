@@ -1,8 +1,4 @@
-from django.db.models import Sum
-
 from django_filters import rest_framework as filters
-
-from rainfall.floor.models import Floor
 
 
 class FloorFilter(filters.FilterSet):

@@ -1,6 +1,3 @@
-from django.contrib import admin
-
-
 class PermissionsActionsAdmin(object):
     add_permission = True
     change_permission = True
