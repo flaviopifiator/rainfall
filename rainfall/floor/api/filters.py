@@ -1,5 +1,7 @@
 from django_filters import rest_framework as filters
 
+from rainfall.floor.models import Floor
+
 
 class FloorFilter(filters.FilterSet):
     precipitations__gt = filters.NumberFilter(method='get_greater_precipitations')
